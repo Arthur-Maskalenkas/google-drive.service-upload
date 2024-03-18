@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2019",
+        "strictPropertyInitialization": false,
+        "noUnusedParameters": false,
+        "allowUmdGlobalAccess": false,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "noUnusedLocals": false,
+        "allowUnusedLabels": true,
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "rootDirs": ["src", "tests"],
+        "baseUrl": ".",
+        "paths": {
+            "@/infra/*": ["src/infra/*"],
+            "@/main/*": ["src/main/*"],
+
+            "@/service/*": ["src/service/*"],
+            "@/domain/*": ["src/domain/*"],
+            "@/presentation/*": ["src/presentation/*"]
+
+        }
+    },
+    "include": [
+        "src",
+        "tests",
+        "jest.config.ts"
+    ],
+    "exclude": []
+}
